@@ -1,10 +1,11 @@
 import React from 'react';
 import './styles.css';
+import Image from '../Image'
 
-const Grid = ({ images }) => {
+function Grid({ images }) {
   return (
     <div className="flex_container">
-      {images.map((image, i) => <div key={i} className="flex_child">{i}</div>)}
+      {images.map((imageProps, i) => <div key={i} className="flex_child"><Image {...imageProps}/></div>)}
     </div>
   );
 };
