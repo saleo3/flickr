@@ -1,0 +1,1 @@
+export const URL_API = `https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${process.env.REACT_APP_API}&format=json&nojsoncallback=1&per_page=9&tags=`;
